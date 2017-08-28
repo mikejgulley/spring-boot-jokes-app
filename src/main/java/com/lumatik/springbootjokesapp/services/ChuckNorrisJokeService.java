@@ -1,4 +1,4 @@
-package services;
+package com.lumatik.springbootjokesapp.services;
 
 public interface ChuckNorrisJokeService {
 
