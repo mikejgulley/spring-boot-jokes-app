@@ -8,9 +8,8 @@ public class ChuckNorrisJokeServiceImpl implements ChuckNorrisJokeService {
 
     private final ChuckNorrisQuotes chuckNorrisQuotes;
 
-    // More efficient, just create on instance of ChuckNorrisQuotes instead of one every time we call it
-    public ChuckNorrisJokeServiceImpl() {
-        this.chuckNorrisQuotes = new ChuckNorrisQuotes();
+    public ChuckNorrisJokeServiceImpl(ChuckNorrisQuotes chuckNorrisQuotes) {
+        this.chuckNorrisQuotes = chuckNorrisQuotes;
     }
 
     @Override
